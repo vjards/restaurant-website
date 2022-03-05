@@ -1,0 +1,71 @@
+/*UNIVERSAL STYLES*/
+h1{font-size: 40px;
+text-align: center;}
+
+h3{font-size: 1.5em;}
+
+#menu-items{
+    display:flex;
+    justify-content: center;
+}
+
+.chicken h3{
+    background-color: yellow;
+    width:85px;
+    height:25px;
+}
+.beef h3{
+    background-color: brown;
+    width:60px;
+    height:25px;
+}
+.veggie h3{
+    background-color: green;
+    width:70px;
+    height:25px;
+}
+
+.veggie, .chicken, .beef{
+    background-color:gray;
+}
+
+
+/*TABLET STYLES*/
+@media(min-width:768px){
+    .chicken h3{
+        background-color: yellow;
+        width:85px;
+        height:25px;
+        float:;
+    }
+    .beef h3{
+        background-color: brown;
+        width:60px;
+        height:25px;
+        float:;
+    }
+    .beef, .chicken, .veggie{
+        background-color:gray;
+        width:300px;
+        height:300px;
+        padding:10px;
+        float: left;
+    }
+    .chicken{
+        margin-left: 50px;
+    }
+    .beef{
+        margin-left: 10px;
+    }
+    .veggie{
+        width: 700px;
+        height: 200px;
+        margin-left: 15px;
+    }
+}
+
+
+/*DESKTOP STYLES*/
+@media (min-width:992px){
+
+}
