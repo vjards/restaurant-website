@@ -1,9 +1,19 @@
-/*UNIVERSAL STYLES*/
+/**************************
+     UNIVERSAL STYLES
+***************************/
 h1{font-size: 40px;
 text-align: center;}
 
 h3{font-size: 1.5em;}
+p{ font-size: 20px; font-family: 'Quicksand', sans-serif;}
 
+h1, h3{
+    font-family: 'Kalam', cursive;
+}
+
+/***************************
+         MENU ITEMS
+*****************************/
 #menu-items{
     display:flex;
     justify-content: center;
@@ -12,17 +22,18 @@ h3{font-size: 1.5em;}
 .chicken h3{
     background-color: yellow;
     width:85px;
-    height:25px;
+    height:35px;
 }
+
 .beef h3{
     background-color: brown;
     width:60px;
-    height:25px;
+    height:35px;
 }
 .veggie h3{
     background-color: green;
     width:70px;
-    height:25px;
+    height:35px;
 }
 
 .veggie, .chicken, .beef{
@@ -30,29 +41,42 @@ h3{font-size: 1.5em;}
 }
 
 
-/*TABLET STYLES*/
+/**************************
+     TABLET STYLES
+************************/
 @media(min-width:768px){
     .chicken h3{
         background-color: yellow;
         width:85px;
-        height:25px;
-        float:;
+        height:35px;
+        margin:0;
+        float:right;
     }
     .beef h3{
         background-color: brown;
         width:60px;
-        height:25px;
-        float:;
+        height:35px;
+        margin:0;
+        float:right;
     }
+
+    .veggie h3{
+        background-color: green;
+        width:70px;
+        height:35px;
+        margin:0;
+        float:right;
+    }
+
     .beef, .chicken, .veggie{
         background-color:gray;
         width:300px;
         height:300px;
-        padding:10px;
         float: left;
     }
     .chicken{
         margin-left: 50px;
+        margin-bottom: 10px;
     }
     .beef{
         margin-left: 10px;
@@ -61,11 +85,16 @@ h3{font-size: 1.5em;}
         width: 700px;
         height: 200px;
         margin-left: 15px;
+        
     }
 }
 
-
-/*DESKTOP STYLES*/
+/********************
+    DESKTOP STYLES
+********************/
 @media (min-width:992px){
-
+    .veggie{
+        width:300px;
+        height:300px;
+    }
 }
